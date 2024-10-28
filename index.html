@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3:47</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+        }
+        input[type="password"] {
+            padding: 10px;
+            font-size: 1em;
+            border-radius: 5px;
+            border: none;
+            text-align: center;
+        }
+        input[type="submit"] {
+            display: none; /* Ocultamos o botão para uma experiência mais limpa */
+        }
+    </style>
+    <script>
+        function k9x5q(event) {
+            event.preventDefault();
+            const w7b3a = document.getElementById('password').value;
+            const j4d8m = 'aGVjYXRl'; // Senha codificada em base64
+            const g2p6n = atob(j4d8m); // Decodifica a senha
+
+            if (w7b3a === g2p6n) {
+                const t2y8z = 'aHR0cDovL3BsYWNlaG9sZGVyLmNvbQ=='; // Link codificado em base64
+                window.location.href = atob(t2y8z); // Decodifica e redireciona para o link
+            } else {
+                alert('Senha incorreta!');
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>3:47</h1>
+        <form onsubmit="k9x5q(event)">
+            <input type="password" id="password" placeholder="Senha">
+        </form>
+    </div>
+</body>
+</html>
